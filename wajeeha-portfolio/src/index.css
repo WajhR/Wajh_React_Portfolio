@@ -13,7 +13,7 @@ html .font-family {
 /* font-[Playfair] bg-gradient-to-t from-[#da4eb2] to-[#a6c1ee] h-screen */
 
 body {
-    @apply bg-gradient-to-t from-[#da4eb2] to-[#a6c1ee] h-screen;
+    @apply bg-gradient-to-t from-[#da4eb2] to-[#a6c1ee] h-full;
    
 }
 

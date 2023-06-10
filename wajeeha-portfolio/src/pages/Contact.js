@@ -1,22 +1,92 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa' 
+
+
 
 export default function Contact() {
+  // const [error, setError] = useState(false);
+
+  // const handleBlur = (e) => {
+  //   if (e.target.value === "") {
+  //     setError(true);
+  //   }
+  // };
   return (
-    <div >
-      <h1  >Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+    <section
+      name="contact"
+      className="w-full h-screen flex-col justify-center text-center py-20"
+    >
+      {/* <form 
+        method="POST"
+        action="https://getform.io/f/cc670db9-52f4-4efe-a6e3-588a7eb01955"
+        className="flex flex-col max-w-[600px] w-full"
+      > */}
+        <div className="pb-8 border-black">-
+          <p className="text-4xl font-bold inline border-pink-600 text-gray-300">
+            Get in touch!
+          </p>
+          <p className="text-xl text-gray-700 py-10 text-center">
+            If you would like to contact me, please click on the social icons or email me.  
+          </p>
+          
+      
+     
+        <p>Email: w_riyasat@hotmail.com</p>
+       
+        <ul className="social-icons">
+          <li>
+          <a className="flex justify-center items-center box-border h-14 w-24 border-2 px-4 py-3 my-8 mx-auto text-gray-300 p-4 rounded-full  hover:bg-blue-600 hover:border-blue-600"
+            href="https://www.linkedin.com/in/wajeehariyasat">
+               <FaLinkedin size={40} />
+            </a>
+          </li>
+          <li>
+
+            <a className="flex justify-center items-center box-border h-14 w-24 border-2 px-4 py-3 my-8 mx-auto text-gray-300 p-4 rounded-full  hover:bg-[#0f0f0f] hover:border-[#0f0f0f]"
+             href="https://github.com/WajhR">
+             <FaGithub size={30} />
+            
+            </a>
+          </li>
+        </ul>
+      
+
+     
+          <a 
+          href="mailto:w_riyasat@hotmail.com">
+        <button className="text-white box-border border-2 h-14 w-29 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-full">
+          Email Me!
+        </button>
+        </a>
+
+
+        </div>
+        {/* <input
+          className="bg-[#ccd6f6] p-2"
+          type="text"
+          placeholder="Name"
+          name="name"
+          onBlur={handleBlur}
+        />
+        {error && <p className="text-red-500">This field is required</p>}
+        <input
+          className="my-4 p-2 bg-[#ccd6f6]"
+          type="text"
+          placeholder="Email"
+          name="email"
+          onBlur={handleBlur}
+        />
+        {error && <p className="text-red-500">This field is required</p>}
+        <textarea
+          className="bg-[#ccd6f6]  p-2"
+          name="message"
+          rows="10"
+          placeholder="Message"
+          onBlur={handleBlur}
+        ></textarea>
+        {error && <p className="text-red-500">This field is required</p>} */}
+     
+      {/* </form> */}
+    </section>
   );
 }

@@ -2,16 +2,29 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <main name="contact" className="w-full h-screen items-center p-4">
+      <section className='flex flex-col justify-center items-center w-full h-full'>
+
+        <section className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
+          <div className='sm:text-right pb-8 pl-4'>
+            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+              About Me
+            </p>
+          </div>
+          <div></div>
+        </section>
+
+        <section className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+          <div className='sm:text-right text-4xl font-bold'>
+            <p>Hi,nice to meet you, please take a lood around.</p>
+          </div>
+          <div>
+            <p>I am passoniate about building excellent software that improves the lives of people.</p>
+          </div>
+        </section>
+
+
+      </section>
+    </main>
   );
 }
